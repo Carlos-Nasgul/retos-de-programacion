@@ -21,3 +21,11 @@ h3 {
 p {
   font-size: 1.2em;
 }
+
+#board {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+}

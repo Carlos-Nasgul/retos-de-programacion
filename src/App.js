@@ -95,16 +95,17 @@ const App = () => {
   return (
     <div className="App">
       <h1>Connect Four</h1>
-      <Board board={board} onCellClick={handleCellClick} />
+      <div id='board'>
+        <Board board={board} onCellClick={handleCellClick} /></div>
       {winner && <h2>{winner === 'R' ? 'Red' : 'Yellow'} wins!</h2>}
       <div>
         <button onClick={resetGame}>Reset Game</button>
         <button onClick={resetScore}>Reset Score</button>
       </div>
       <div>
-        <h3>Score</h3>
-        <p>Red: {score.red}</p>
-        <p>Yellow: {score.yellow}</p>
+        <h3 id='score'>Score</h3>
+        <p id='players'>Red: {score.red}</p>
+        <p id='players'>Yellow: {score.yellow}</p>
       </div>
     </div>
   );
